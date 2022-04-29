@@ -1,3 +1,6 @@
+/* 모든설정 초기화 시키는 reset css 제작 */
+/* 폰트 변경, 아이콘 삽입*/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
