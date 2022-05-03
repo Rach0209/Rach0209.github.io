@@ -370,6 +370,10 @@ padding: 30px 0 0 0;
 
 /*비포 애프터연습 CSS부분 */
 
+h1 {
+    text-align: center;
+}
+
 .BFTraining {
     text-align: center;
 }
@@ -393,6 +397,8 @@ padding: 30px 0 0 0;
     vertical-align: middle;
     margin: 0 10px;
 }
+
+/* 아이콘 비포애프터 */
 .BF li::before {
     content: "\e91c";
     font-family: xeicon!important;
