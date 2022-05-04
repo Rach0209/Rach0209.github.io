@@ -849,6 +849,22 @@ padding: 3px 0 0 0;
     font-size: 30px;
 }
 
+/*
+.mopen span.on:nth-child(1) {
+    display: none;
+}
+.mopen span.on:nth-child(2) {
+    transform: rotate(45deg);
+}
+.mopen span.on:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.mopen span.on:nth-child(4) {
+    display: none;
+}
+*/
+
+/* 아이콘으로 메뉴 모양 만들기 */
 .mopen::before {   
     content: "\e903";
     font-family: xeicon!important;

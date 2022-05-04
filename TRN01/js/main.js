@@ -29,6 +29,12 @@ $('.mopen').on('click', function(){
 
 // 반응형 t06.에서 메뉴 버튼 모양 바꾸기//
 
+//  $('.mopen').on('click', function(){
+//     $('.mopen span').toggleClass('on');
+//     this.classList.toggleClass('on'); })
+//     
+
+
 $('.mopen').on('click', function(){
     $('.mopen').toggleClass('on')
 })
