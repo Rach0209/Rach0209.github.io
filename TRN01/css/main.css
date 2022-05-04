@@ -48,7 +48,7 @@ line-height: 40px;
 
 
 /* 그라데이션 넣기 */
-.main_visual .itm01 h3 {
+.main_visual .itm h3 {
     background: linear-gradient(to right top, #03ccfe, #0237ab, #333333);
     color: transparent;
     -webkit-background-clip: text;
@@ -79,6 +79,10 @@ line-height: 40px;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 1200px;
+}
+
+.main_slider .itm {
+    height: 200px;
 }
 
 .main_slider h3 {
@@ -502,7 +506,7 @@ Responsive 768px
 
 
 /* 그라데이션 넣기 */
-.main_visual .itm01 h3 {
+.main_visual .itm h3 {
     background: linear-gradient(to right top, #03ccfe, #0237ab, #333333);
     color: transparent;
     -webkit-background-clip: text;
@@ -539,6 +543,12 @@ Responsive 768px
     text-align: center;
 }
 
+/* 슬라이더의 크기를 줌으로써 안의 다른 내용물이 내려오거나 올라와서 겹치지 않게 함. */
+.main_slider .itm {
+    height: 350px;
+}
+
+
 .main_slider h3 {
     font-size: 11vw;    /*vw를 사용하여 뷰포터 사이즈로 맞춘다.*/
     font-weight: 900;
@@ -554,7 +564,7 @@ Responsive 768px
 
 .main_slider .slick-dots {
     text-align: center;
-padding: 30px 0 0 0;
+padding: 3px 0 0 0;
 }
 
 .main_slider .slick-dots li {
