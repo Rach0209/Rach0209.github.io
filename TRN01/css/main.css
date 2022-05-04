@@ -846,45 +846,19 @@ padding: 3px 0 0 0;
     width: 30px;
     height: 30px;
     background: #ddd;
+    font-size: 30px;
 }
 
-.mopen span {
-    position: absolute;
-    top: 5px;
-    left: 5px;      /*레프트라이트로 박스를 늘임*/
-    right: 5px;
-    height: 3px;
-    background: #333;
-    transition: 0.5s;
+.mopen::before {   
+    content: "\e903";
+    font-family: xeicon!important;
 }
 
-.mopen span:nth-child(1) {
-    top: 5px;
-}
-.mopen span:nth-child(2) {
-    top: 13px;
-}
-.mopen span:nth-child(3) {
-    top: 13px;
-}
-.mopen span:nth-child(4) {
-    top: 21px;
+.mopen.on::before {   
+    content: "\e921";
+    font-family: xeicon!important;
 }
 
-.mopen span.on:nth-child(1) {
-    display: none;
-}
-
-.mopen span.on:nth-child(2) {
-    transform: rotate(45deg);
-}
-
-.mopen span.on:nth-child(3) {
-    transform: rotate(-45deg);
-}
-
-.mopen span.on:nth-child(4) {
-    display: none;
-}
 
 }
+
