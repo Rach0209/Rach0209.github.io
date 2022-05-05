@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rach0209</title>
-    <link rel="stylesheet" href="./css practice/reset a.css">
+    <link rel="stylesheet" href="./css practice/reset a.css"> <!-- 스터디목록 페이지 꾸미기용 CSS-->
     <link rel="stylesheet" href="./css practice/main a.css">
     <link rel="shortcut icon" href="/github.ico">
 </head>
@@ -24,41 +24,72 @@
             allowfullscreen></iframe>
 
         <hr>
-        <h2>
-            <i class="xi-calendar-check"></i>
-            주차별 목록
-        </h2>
 
+        <div class="list">
+            <h2>
+                <i class="xi-calendar-check"></i>주차별 목록
+                <span id="toc_toggle" onclick="openCloseToc()">
+                    <i class="xi-caret-down-square-o" id="downicon" onclick="changeClassName()"></i>
+                </span>
+            </h2>
 
-        <ol>
+            <div class=" work_menu">
+                <ol id="toc_content">
 
-            <h3>1주차 4/28~4/29</h3>
+                    <h3>1주차 4/28~4/29</h3>
 
-            <li>
-                <a href="t01.html" target="_blank">박스사이즈,컬러조정- 220428</a>
+                    <li>
+                        <a href="t01.html" target="_blank">박스사이즈,컬러조정- 220428</a>
 
-            </li>
-            <li>
-                <a href="t02.html" target="_blank">flex활용 - 220428</a>
+                    </li>
+                    <li>
+                        <a href="t02.html" target="_blank">flex활용 - 220428</a>
 
-            </li>
-            <li>
-                <a href="t03.html" target="_blank">박스 Z축 활용, 트랜지션, 로테이트 활용 - 220428</a>
+                    </li>
+                    <li>
+                        <a href="t03.html" target="_blank">박스 Z축 활용, 트랜지션, 로테이트 활용 - 220428</a>
 
-            </li>
-            <h3>2주차 5/02~5/06</h3>
+                    </li>
+                    <h3>2주차 5/02~5/06</h3>
 
-            <li>
-                <a href="t04.html" target="_blank">백그라운드 작업하기 - 220502</a>
-            </li>
-            <li>
-                <a href="t05.html" target="_blank">비포애프터 작업하기 - 220503</a>
-            </li>
-            <li>
-                <a href="t06.html" target="_blank">반응형 연습 - 220504</a>
-            </li>
-        </ol>
+                    <li>
+                        <a href="t04.html" target="_blank">백그라운드 작업하기 - 220502</a>
+                    </li>
+                    <li>
+                        <a href="t05.html" target="_blank">비포애프터 작업하기 - 220503</a>
+                    </li>
+                    <li>
+                        <a href="t06.html" target="_blank">반응형 연습 - 220504</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
     </div>
 </body>
+
+
+<script>
+    function openCloseToc() {
+        if (document.getElementById('toc_content').style.display === 'block') {
+            document.getElementById('toc_content').style.display = 'none';
+
+        } else {
+            document.getElementById('toc_content').style.display = 'block';
+
+        }
+    }
+
+    function changeClassName() {
+        if (document.getElementById('downicon').className === 'xi-caret-down-square-o') {
+            document.getElementById('downicon').className = 'xi-caret-up-square-o';
+
+        } else {
+            document.getElementById('downicon').className = 'xi-caret-down-square-o';
+        }
+
+    }
+
+</script>
+
 
 </html>
