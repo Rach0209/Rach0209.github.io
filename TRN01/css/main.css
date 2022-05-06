@@ -7,9 +7,9 @@
     margin: 0 auto;
 }
 
-
-.header .top_banner {border-bottom: 1px solid #ddd;
-line-height: 40px;
+.header .top_banner {
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
 }
 
 .header .top_banner span {
@@ -26,6 +26,8 @@ line-height: 40px;
 .header .gnb {
     margin: 0 0 0 auto;
 }
+
+
 
 .header .gnb>ul {
     display: flex;
@@ -471,9 +473,10 @@ Responsive 768px
     height: 100vh;
     margin: 0 0 0 auto;
     border-right: 1px solid #ddd;
-    z-index: 999; /*999로 잡아주면서 제일 위로 올리는게 국룰*/
+    z-index: 900; /*999로 잡아주면서 제일 위로 올리는게 국룰*/
     transition: 0.5s;  /*transition: left 0.5s;한쪽만 적용가능*/
 }
+
 
 .header .gnb.on {
     left: 0;
@@ -484,7 +487,7 @@ Responsive 768px
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 50px 15px;
+    padding: 100px 15px;
     line-height: 40px;
     font-size: 19px;
     font-weight: 500;
