@@ -131,6 +131,22 @@ h2::before {
     font-family: xeicon!important;
     font-size: 28px;
 }
+h2 i {
+    color: #5757ee;
+}
+
+h2 i:hover, i:focus {
+    animation-duration: 7s; animation-name: rainbowLink; animation-iteration-count: infinite; } 
+    @keyframes rainbowLink {     
+     0% { color: #ff4949; }
+     15% { color: #ff8a42; }
+     30% { color: #ffd152; }
+     45% { color: #68ff54; }
+     60% { color: #3892ff; }
+     75% { color: #2929a0; }
+     90% { color: #7c44ff; } 
+     100% { color: #ee56ff; }
+    }
 
 
 h3 {
