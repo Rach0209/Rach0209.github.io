@@ -269,7 +269,7 @@ nav>ul>li::before {
 }
 
 .content01 .container figure a {
-    display: inline-block;
+    display: inline-block;      /* 테두리위치 조정을 하러면 padding margin등이 들어가야 하는데 기본 inline은 조정할 수 없기 때문에 inline-block으로 블록 속성을 부여해줘서 padding margin등으로 조정이 가능해진다. (테두리와 글씨의 간격 조절 등)*/
     border: 1px solid #333;
     line-height: 30px;
     padding: 0 30px;
