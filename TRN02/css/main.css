@@ -218,7 +218,8 @@ nav>ul>li::before {
     display: none;
 }
 
-
+/* 숙제 겸 연습-------------------------
+클래스 이름은 다 보고 따옴 */
 .content01 {
     padding: 100px 0;
     text-align: center;
