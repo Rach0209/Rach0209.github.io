@@ -1,0 +1,279 @@
+/* 구글 웹폰트 가져오기 (노토산스) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    position: relative; /*<i> 태그의 기준을 잡기 위해*/
+    display: flex;
+    width: 1200px;
+    margin: 0 auto; /*가운데로 오게함*/
+}
+
+.top_banner {
+    padding: 25px 0;
+    background: #f1f1f1;
+}
+
+.top_banner .container {
+    display: block;
+}
+
+.top_banner h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.top_banner p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* 기본 inline-block임 */
+.top_banner a {
+    padding: 0 15px 4px 15px;
+    border: 1px solid #333;
+    margin: 0 0 0 20px;
+}
+
+.top_banner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #333;
+    border-radius: 50%;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.header .gnb {
+ line-height: 100px;   
+}
+
+.header .gnb nav {
+    margin: 0 0 0 auto;/*nav 대신 .container 안에 justify-content: space-between; 써서 라인 맞춰서 채울 수 도 있다.*/
+}
+
+.header .gnb form {
+    margin: 0 0 0 50px;
+}
+
+/* 다단메뉴나 다른 박스에 메뉴가 생길 때를 방지해서 >로 자식을 잡아주기 */
+nav>ul {
+    display: flex;
+    /* gap: 40px; */
+}
+
+/* nav>ul>li {
+    /* padding: 0 20px; *//*gap(IE에서 사용 불가) 옛날 방법으로 패딩씀*/
+
+nav>ul>li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background:#ddd;
+    margin: 0 20px;
+}
+
+/* id는 #으로 잡는다. */
+#searchForm input[type='text'] {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none; /*input(검색창) 라인 제거*/
+    padding: 5px 0;
+}
+
+#searchForm button {
+    border: none;
+    outline: none;
+    background: transparent; /*투명하게*/
+    font-size: 30px;
+}
+
+
+/*클래스를 써서 백그라운드를 줌 */
+.main_visual figure {
+    position: relative;
+    height: 600px;
+}
+
+.main_visual .item01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+.main_visual .item02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+.main_visual .item03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.main_visual figure h3 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    text-shadow: 0 0 2px #000;   /*shadow: 오른쪽, 아래, 블러, 컬러*/
+}
+
+.main_visual figure.item02 h3 {
+    color: #333;
+    text-shadow: 0 0 2px #fff;
+}
+
+.main_visual figure p {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.main_visual figure.item02 p {
+    color: #333;
+}
+
+.main_visual figure a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #333;
+    padding: 5px 20px 8px 20px;
+}
+
+.main_visual figure h3 {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.main_visual figure.on h3 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;/*슬라이더에서 백을 보장, 위의 태그에 붙이면 오류 생김(뒤로 돌아가는 동작이 안됨)*/
+}
+
+.main_visual figure p {
+    transform: translateY(100px);
+    opacity: 0;
+}
+.main_visual figure.on p {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s 0.5s;
+}
+.main_visual figure a {
+    transform: translateY(100px);
+    opacity: 0;
+}
+.main_visual figure.on a {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s 1s;
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.main_visual .slick-dots li {
+    display: inline-block;   /*slick-dots 자체가 js에서 블록설정되있음.*/
+    width: 80px;
+    height: 5px;
+    background: #333;
+    margin: 0 5px;
+}
+
+.main_visual .slick-dots li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background:#dc3545;
+}
+.main_visual .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3.5s;
+}
+
+
+.main_visual .slick-dots button {
+    display: none;
+}
+
+
+.content01 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.content01 h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    letter-spacing: 0.5em;
+}
+.content01 p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 0.025em;
+}
+
+.content01 .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.content01 .container figure {
+    flex: 1;
+    padding: 0 15px;
+}
+
+
+.content01 .container figure .case {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.content01 .container img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.content01 .container img:hover {
+    transform: scale(1.5);
+}
+
+.content01 .container figure strong {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.content01 .container figure a {
+    display: inline-block;
+    border: 1px solid #333;
+    line-height: 30px;
+    padding: 0 30px;
+}
+.content01 .container figure a:hover {
+    background: #f00;
+    color: #f2f2f2;
+}
