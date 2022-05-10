@@ -324,16 +324,15 @@ body {
     position: fixed;
     width: 150px;
     height: 200px;
-    right: -120px;
+    left: -100px;
     top: 150px;
     background: transparent;
     transition: 1.5s;
 }
 .side_banner.on {
-    right: 0;
-}
-.side_banner iframe {
-    display: block;
-    padding: 10px 0 0 30px;
+    left: 0;
 }
 
+.side_banner i {
+    font-size: 20px;
+}
