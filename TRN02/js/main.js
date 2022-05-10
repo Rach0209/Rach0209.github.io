@@ -28,7 +28,34 @@ $(function(){
     // current.addClass('on').siblings().removeClass('on')
     // })
 
+//-----------movie -----------------------//
+//그냥 nth-child는 3번째가 되고 nth-of-type은 저 태그안에서 첫번째//
+    $('.movie .dec i:nth-of-type(1)').on('click', function(){
+        $('.movie video').trigger('play')
+    });
+    
+    $('.movie .dec i:nth-of-type(2)').on('click', function(){
+        $('.movie video').trigger('pause')
+    });
 
+    $("#myMovie").YTPlayer({
+        videoURL:'h3rKe6DdC18',
+                        containment:'.utube',
+                        autoPlay:true, 
+                        mute: true, 
+                        startAt:0, 
+                        opacity:1,
+                        showControls: false,
+                        playOnlyIfVisible: true,
+    });
+
+    $('.utube i:nth-of-type(1)').on('click', function(){
+        $("#myMovie").YTPPlay();
+    });
+
+    $('.utube i:nth-of-type(2)').on('click', function(){
+        $("#myMovie").YTPPause();
+    });
 
     ///////////////////////////////////////
 })

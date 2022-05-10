@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box; /*이거 안하면 float으로 했을 때 크기가 안맞음*/
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -53,5 +54,7 @@ a {
 }
 
 img {
-	vertical-align: middle;
+	vertical-align: middle;/*이미지 가운데 정렬*/
+	max-width: 100%; /*이걸로 사진크기 한방에 조절시킴*/
 }
+

@@ -34,7 +34,8 @@ body {
     font-weight: 300;
 }
 
-/* 기본 inline-block임 */
+/* <a>태그 자체는 기본 inline임
+하지만 slick 슬라이더 자바스크립트 안에 설정으로 <a>태그가 inline-block으로 되어있어서, inline-block속성을 쓸 수 있다. */
 .top_banner a {
     padding: 0 15px 4px 15px;
     border: 1px solid #333;
@@ -220,7 +221,7 @@ nav>ul>li::before {
 
 /* 숙제 겸 연습-------------------------
 클래스 이름은 다 보고 따옴 */
-.content01 {
+/* .content01 {
     padding: 100px 0;
     text-align: center;
 }
@@ -270,11 +271,167 @@ nav>ul>li::before {
 
 .content01 .container figure a {
     display: inline-block;      /* 테두리위치 조정을 하러면 padding margin등이 들어가야 하는데 기본 inline은 조정할 수 없기 때문에 inline-block으로 블록 속성을 부여해줘서 padding margin등으로 조정이 가능해진다. (테두리와 글씨의 간격 조절 등)*/
-    border: 1px solid #333;
+    /* border: 1px solid #333;
     line-height: 30px;
     padding: 0 30px;
 }
 .content01 .container figure a:hover {
     background: #f00;
     color: #f2f2f2;
+} */ 
+
+
+.basic {
+    padding: 100px 0;
+    background: #ddd;    
+    text-align: center;
 }
+
+
+/*-------------------정렬 구식방법----------------------*/
+/* .dtainer( => 현재 container임 {
+    width: 1230px;
+    margin: 0 auto;
+}
+.dtainer::after {
+    content: "";
+    display: block;
+    clear: both; */
+/*float으로 떠오른 것들을 다시 가라앉히는 용도------- 배경화면 갈라지던것을 다시 원상태로 복귀*/
+/* 구식으로 정리하기---flex 대신 float 사용 */
+/*.dtainer figure {
+    float: left;
+    width: 33.33333333%; /*갯수에 따라 값을 자꾸 바꿔야 한다.*/
+    /* padding: 0 15px;
+}
+
+.dtainer figure img {
+    max-width: 100%;
+} */
+
+.basic .container {
+    gap: 30px;
+}
+
+.basic figure {
+    flex: 1;
+
+}/*reset.css에 img max-width:100%로 사진크기 전체 조절----100%는 박스의 와이드 값을 채움 사진*/
+
+
+
+/* .basic ---> section변경... h2같은 경우는 스타일을 하나로 정해줌. */
+section h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+/* 폰트 변화 인식하기 h2와 p의 차이 주기 */
+section p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+
+/* 박스가 튀어나오는 것을 방지한 inbox클래스를 만들고, overflow:hidden */
+.basic .inbox {
+    overflow: hidden;
+    border-radius: 38% 62% 37% 63% / 12% 30% 70% 88%;
+    transition: 0.5s 0.3s;
+    margin: 0 0 30px 0;
+}
+
+.basic figure:hover .inbox {
+    border-radius: 50% ;
+}
+.basic figure img {
+    transition: 0.5s;
+}/*transition을 먼저 걸어줌으로 백방지*/
+.basic figure:hover img {
+    transform: scale(1.5);
+}
+/* border-radius generator로 모양을 바꾸는데 어시 */
+
+.basic figure strong {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.basic figure a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 5px 20px 10px 20px;
+}
+
+.basic figure a:hover {
+    background: #f00;
+}
+
+
+.fixed_bg {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/mainvisual01.jpg) no-repeat fixed center top/cover; /*백그라운드 포지션 X Y/cover = 박스를 가득 채움.*/
+    filter: grayscale(0.75);
+    /* background-attachment: fixed;url에서 자리를 잡아놨어도 위치가 바뀜*/
+}
+
+.fixed_bg i {
+    padding: 10px; 
+    background: #333;
+    margin: 5px 0 0 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.fixed_bg span {
+    vertical-align: middle; /*양쪽에 다 적용시켜야함 하지만 여러개 되면 꼬여서 신중하게 사용*/
+}
+
+.movie {
+    padding: 100px 0;
+}
+
+.movie .container {
+    gap: 50px;
+}
+.movie .container figure {
+    flex: 1;
+}
+.movie .container .dec {
+    flex: 1;
+    padding: 100px 0;
+}
+
+.movie video {
+    max-width: 100%;
+}
+
+.movie .dec i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px 0 0;
+}
+
+
+/*----------유튜브에서 동영상 끌어와서 백그라운드 재생시키기----------------------------*/
+.utube {
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+    filter: grayscale(1);
+}
+
+.utube i {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 2px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
