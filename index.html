@@ -21,10 +21,7 @@
             석's Document
         </h1>
 
-        <iframe width="100" height="60" src="https://www.youtube.com/embed/qMwzWk81tVM" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
 
         <hr>
 
@@ -92,6 +89,17 @@
         </div>
     </div>
     <i class="xi-arrow-up totop"></i>
+
+
+    <div class="side_banner">
+        <button>
+            <i class="xi-music"></i>
+        </button>
+        <iframe width="100" height="60" src="https://www.youtube.com/embed/qMwzWk81tVM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
 </body>
 
 <script src="./TRN01/js/jquery-1.12.4.min.js"></script>
@@ -129,6 +137,13 @@
         let sct = $(window).scrollTop();
         sct > 10 ? $('.totop').fadeIn() :
             $('.totop').fadeOut();
+    });
+</script>
+
+
+<script>
+    $('.side_banner button').on('click', function () {
+        $(this).parent().toggleClass('on')
     });
 </script>
 

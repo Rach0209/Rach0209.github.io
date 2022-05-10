@@ -58,4 +58,35 @@ $(function(){
     });
 
     ///////////////////////////////////////
+
+    //slick----------------------///
+
+    $('.slider_product .container').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: true,
+      });
+
+      $(".slider_product i.xi-arrow-left").on("click", function(){
+        $(".slider_product .container").slick("slickPrev");
+      });
+      $(".slider_product i.xi-arrow-right").on("click", function(){
+        $(".slider_product .container").slick("slickNext");
+      });
+
+///////////////////////////////////////////////
+
+////////////footer form...///////////////////
+$(".link select").on("change", function(){
+    var lik=$(this).val();
+    if(lik) window.open(lik);
+  });
+
+
+
+////////////////////////////////////////////
+
+
 })

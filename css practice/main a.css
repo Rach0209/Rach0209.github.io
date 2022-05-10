@@ -100,7 +100,10 @@
 } */
 
 
-/* 목록 꾸미기 연습 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* ----------------목록 꾸미기 연습----------------------*/
 
 .docubox {
     width: 1200px;
@@ -110,8 +113,9 @@
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
     text-align: center;
     background: linear-gradient(#7F7FD5, #86A8E7, #91eae4);
     color: transparent;
@@ -235,7 +239,7 @@ hr {
 }
 
 body {
-
+    font-family: 'Noto Sans KR', sans-serif;
     height: 100vh;
     background-image: url(/St.background.jpg);
     background-repeat: no-repeat;
@@ -307,10 +311,29 @@ body {
 }
 
 body {
-    width: 100%;
+    width: auto;
     margin: 0 auto;
     height: 100vh;
     background-image: url(/St.background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.side_banner {
+    position: fixed;
+    width: 150px;
+    height: 200px;
+    right: -120px;
+    top: 150px;
+    background: transparent;
+    transition: 1.5s;
+}
+.side_banner.on {
+    right: 0;
+}
+.side_banner iframe {
+    display: block;
+    padding: 10px 0 0 30px;
+}
+

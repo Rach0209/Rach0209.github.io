@@ -435,3 +435,143 @@ section p {
     border-radius: 50%;
 }
 
+
+
+/* 슬릭슬라이더 혼자 해보기 demo=autoplay버전 */
+.slider_product {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+.slider_product h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    letter-spacing: 9px;
+}
+.slider_product p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.slider_product .container {
+    display: block
+}
+.slider_product .slick-dots {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.slider_product .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.slider_product .slick-dots li button {
+    display: none;
+}
+
+.slider_product .slick-dots li.slick-active {
+    background: #f00;
+}
+.slider_product figure {
+    padding: 0 15px;
+}
+.slider_product img {
+    max-width: 100%;
+}
+
+.slider_product i {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+    color:#fff;
+    background:#333;
+    padding:10px;
+    border-radius:50%;
+}
+.slider_product i.xi-arrow-left {
+    margin-left:-700px;
+}
+.slider_product i.xi-arrow-right {
+    margin-left:700px;
+}
+
+
+
+.slider_product strong {
+    display: block;
+    
+}
+
+
+
+/* footer해보기-------------------------------------------------
+ */
+.footer {
+    border-top: 1px solid #ddd;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+.footer .container {
+    line-height: 60px;
+}
+.footer ul {
+padding: 0 15px;
+}
+.footer ul>li {
+    display: inline-block;
+}
+
+.footer ul li:nth-child(3) {
+    font-weight: 700;
+}
+.footer ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #f1f1f1;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.footer .ft_top {
+    border-bottom: 1px solid #ddddddbb;
+}
+
+.footer .sns {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 0 0 auto;
+}
+
+.ft_bottom .container {    
+    line-height: 100px;
+
+}
+
+.footer .links {
+    margin: 0 0 0 auto;
+}
+
+
+.footer select {
+    display: inline-block;
+    background:#333;
+    padding:5px 15px;
+    border:1px solid #666;
+    color: #fff;
+    margin: 0 0 0 auto;
+}
+
+
+
