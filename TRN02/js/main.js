@@ -59,34 +59,73 @@ $(function(){
 
     ///////////////////////////////////////
 
-    //slick----------------------///
+    //slick혼자하기----------------------///
 
-    $('.slider_product .container').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: true,
-      });
+   // $('.slider_product .container').slick({
+    //    slidesToShow: 5,
+    //    slidesToScroll: 1,
+    //    autoplay: false,
+    //    arrows: false,
+    //    dots: true,
+    //  });
 
-      $(".slider_product i.xi-arrow-left").on("click", function(){
-        $(".slider_product .container").slick("slickPrev");
-      });
-      $(".slider_product i.xi-arrow-right").on("click", function(){
-        $(".slider_product .container").slick("slickNext");
-      });
+      //$(".slider_product i.xi-arrow-left").on("click", function(){
+    //$(".slider_product .container").slick("slickPrev");
+    //  });
+    //  $(".slider_product i.xi-arrow-right").on("click", function(){
+    //    $(".slider_product .container").slick("slickNext");
+    //  });
 
 ///////////////////////////////////////////////
 
-////////////footer form...///////////////////
-$(".link select").on("change", function(){
-    var lik=$(this).val();
-    if(lik) window.open(lik);
-  });
+////////////footer form...혼자하기///////////////////
+//$(".link select").on("change", function(){
+//    var lik=$(this).val();
+//    if(lik) window.open(lik);
+//  });
 
 
 
 ////////////////////////////////////////////
 
+$('.product_slider').on('init reInit afterChange', function(){
+    let current = $('.product_slider .slick-center');
+    current.addClass('on').siblings().removeClass('on');
 
+})
+
+
+$('.product_slider').slick({
+    slidesToShow: 5,
+    centerMode: true, //1200px라인 맞추고 싶다 = 센터모드
+    arrows: false,
+    dots: true,
+    autoplay: true,
+});
+
+$('.product_list .s_left').on('click', function(){
+    $('.product_slider').slick('slickPrev');
+})
+$('.product_list .s_right').on('click', function(){
+    $('.product_slider').slick('slickNext');
+})
+
+
+/////////////tap메뉴만들기//////////////////////
+
+$('.tab_link>li').on('click', function(){
+var idx = $(this).index();
+$(this).addClass('on').siblings().removeClass('on');
+
+$('.tab_content>li').eq(idx).addClass('on').siblings().removeClass('on');
+})
+//eq는 css의 nth child와 비슷 몇번째 인지///////
+})
+////////////////////////////////////////////
+
+////////////////////form//////////////////////
+
+$('.footer #link').on('change', function(){
+    var lik = $(this).val();
+if (lik) window.open(lik)
 })

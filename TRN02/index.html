@@ -190,53 +190,165 @@
                 <!--containment 위치 지정-->
 
             </section>
-            <section class="slider_product">
+            <!--^슬라이더 혼자 해보기
+                <section class="slider_product">
                 <h2>JEWELLERY COLLECTION</h2>
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
                 <div class="container">
                     <figure>
-                        <div class="product">
-                            <img src="./img/lesedilarona01.jpg" alt="">
-                        </div>
-                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <a href="">
+                            <div class="product">
+                                <img src="./img/lesedilarona01.jpg" alt="">
+                            </div>
+                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        </a>
                     </figure>
                     <figure>
-                        <div class="product">
-                            <img src="./img/lesedilarona02.jpg" alt="">
-                        </div>
-                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <a href="">
+                            <div class="product">
+                                <img src="./img/lesedilarona02.jpg" alt="">
+                            </div>
+                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        </a>
                     </figure>
                     <figure>
-                        <div class="product">
-                            <img src="./img/lesedilarona03.jpg" alt="">
-                        </div>
-                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <a href="">
+                            <div class="product">
+                                <img src="./img/lesedilarona03.jpg" alt="">
+                            </div>
+                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        </a>
                     </figure>
                     <figure>
-                        <div class="product">
-                            <img src="./img/lesedilarona04.jpg" alt="">
-                        </div>
-                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <a href="">
+                            <div class="product">
+                                <img src="./img/lesedilarona04.jpg" alt="">
+                            </div>
+                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        </a>
                     </figure>
                     <figure>
-                        <div class="product">
-                            <img src="./img/lesedilarona05.jpg" alt="">
-                        </div>
-                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <a href="">
+                            <div class="product">
+                                <img src="./img/lesedilarona05.jpg" alt="">
+                            </div>
+                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        </a>
                     </figure>
                     <figure>
-                        <div class="product">
-                            <img src="./img/lesedilarona06.jpg" alt="">
-                        </div>
-                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <a href="">
+                            <div class="product">
+                                <img src="./img/lesedilarona06.jpg" alt="">
+                            </div>
+                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        </a>
                     </figure>
                 </div>
                 <i class="xi-arrow-left"></i>
                 <i class="xi-arrow-right"></i>
+            </section>-->
+
+            <section class="product_list">
+                <!--<small>은 타이틀 같은곳에 작은 글자-->
+                <h2>JEWELLERY COLLECTION <small><span>NEW</span></small></h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                <div class="product_slider">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>
+                            <!-- strong은 inline-->
+                            JEWELLERY
+                        </strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona02.jpg" alt="">
+                        </div>
+                        <strong>
+                            <!-- strong은 inline-->
+                            JEWELLERY
+                        </strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona03.jpg" alt="">
+                        </div>
+                        <strong>
+                            <!-- strong은 inline-->
+                            JEWELLERY
+                        </strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona04.jpg" alt="">
+                        </div>
+                        <strong>
+                            <!-- strong은 inline-->
+                            JEWELLERY
+                        </strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona05.jpg" alt="">
+                        </div>
+                        <strong>
+                            <!-- strong은 inline-->
+                            JEWELLERY
+                        </strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona06.jpg" alt="">
+                        </div>
+                        <strong>
+                            <!-- strong은 inline-->
+                            JEWELLERY
+                        </strong>
+                    </figure>
+                </div>
+                <i class="xi-arrow-left s_left"></i>
+                <!-- 아이콘 이름 뒤에 class를 더 붙여줘서 쉽게 잡을 수 있음-->
+                <i class="xi-arrow-right s_right"></i>
+
+
             </section>
 
+            <!-- 탭메뉴 만들기 -->
+            <section class="tab">
+                <div class="container">
+                    <div class="tab_wrap">
+                        <ul class="tab_link">
+                            <li>menu01</li>
+                            <li>menu02</li>
+                            <li>menu03</li>
+                        </ul>
+                        <ul class="tab_content">
+                            <li class="on">
+                                <dl>
+                                    <!--ul이 반복되면,선택어려움 다른태그 불러옴-->
+                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span>
+                                    </dd>
+                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
+                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
+                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
+                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
+                                </dl>
+                            </li>
+                            <li>02</li>
+                            <li>03</li>
+                        </ul>
+                    </div>
+                    <figure>
+                        <img src="./img/mainvisual01.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
         </main>
-        <footer class="footer">
+
+        <!--footer혼자 해보기
+            <footer class="footer">
             <div class="ft_top">
                 <div class="container">
                     <ul>
@@ -270,6 +382,46 @@
                     </div>
                 </div>
             </div>
+        </footer>-->
+        <footer class="footer">
+            <div class="footer_top container">
+                <ul>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">문의하기</a></li>
+                    <li><a href="">개인정보 취급방침</a></li>
+                    <li><a href="">방문 예약하기</a></li>
+                    <li><a href="">사이즈 가이드</a></li>
+                    <li><a href="">그라프 하우스 소개</a></li>
+                </ul>
+                <div class="sns">
+                    <a href=""><i class="xi-kakaotalk"></i></a>
+                    <a href=""><i class="xi-facebook"></i></a>
+                    <a href=""><i class="xi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <!--<hr>은 신중하게 사용. 원래는 문장과 문장 갈라놓을 때-->
+            <address class="footer_bottom container">
+                <div class="left">
+                    전화번호 : <a href="tel:010-6456-4960">010-6456-4960</a>
+                    <a href="mailto:sipossa@naver.com">sipossa@naver.com</a>
+                    Graff France Headquarters 237 rue
+                    Saint-Honore Paris
+                    75001
+                </div>
+                <div class="right">
+                    <select id="link">
+                        <!--select는 option값을 가진다.-->
+                        <option value="">family link</option>
+                        <option value="http://naver.com">naver</option>
+                        <option value="http://daum.net">daum</option>
+                        <option value="http://google.com">google</option>
+                    </select>
+                    <!--form은 원래 무엇을전송할 때 쓰지만, 여기서는 폼의 디자인만 가져와서 씀-->
+                    <form action=""></form>
+                </div>
+            </address>
         </footer>
     </div>
 
