@@ -584,23 +584,31 @@ section p {
 .product_list small {
     position: relative;
     display: inline-block;
-    border-top: 15px solid #dee2e6;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid #dee2e6;
-    border-left: 60px solid #dee2e6;
-    width: 0;
-    height: 0;
-    top: 6px;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to top, #fad0c4 30%, #ffd1ff 70%);
+    clip-path: polygon(0 25%, 30% 0, 70% 0, 100% 25%, 50% 80%);
 }
 
 .product_list span {
     position: absolute;
-    top: -11px;
-    left: -52px;
-    color: #ff9100;
+    top: 16px;
+    left: 22px;
+    font-size: 16px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
-
+/* .clip {
+    width: 50px;
+    height: 50px;
+    background: #ff9100;
+    clip-path: polygon(0 25%, 30% 0, 70% 0, 100% 25%, 50% 100%);
+} */
 
 
 /* 탭메뉴~@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
