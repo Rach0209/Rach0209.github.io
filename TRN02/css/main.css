@@ -1153,6 +1153,9 @@ padding: 0 15px;
     display: flex;
 }
 
+.footer ul li:nth-child(3) {
+    font-weight: 600;
+}
 
 /* '~' 표시 넣음으로 제일 앞은 제외*/
 .footer .footer_top ul li~li::before {
