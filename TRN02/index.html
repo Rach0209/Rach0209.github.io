@@ -11,6 +11,7 @@
     <!--reset은 항상 먼저, main은 항상 뒤. 나머지는 상관x-->
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/mbtn.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -47,6 +48,12 @@
 
                         </ul>
                     </nav>
+                    <!-- 인터넷에서 소스 가져옴 hamburger버튼 -->
+                    <button class="hamburger mbtn hamburger--elastic " type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                     <form action="javascript:formSubmit()" id="searchForm">
                         <input type="text">
                         <button>
@@ -163,7 +170,8 @@
             <section class="movie">
                 <div class="container">
                     <figure>
-                        <video src="./img/movie.mp4" muted autoplay loop></video>
+                        <!--playsinline - iphone safari에서 전체화면 재생 방지-->
+                        <video src="./img/movie.mp4" muted autoplay loop playsinline></video>
                     </figure>
                     <div class="dec">
                         <h2>JEWELLERY COLLECTION</h2>
@@ -329,12 +337,12 @@
                             <li class="on">
                                 <dl>
                                     <!--ul이 반복되면,선택어려움 다른태그 불러옴-->
-                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span>
+                                    <dd><a href="#!">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</a><span>2022.05.11</span>
                                     </dd>
-                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
-                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
-                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
-                                    <dd><strong>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</strong><span>2022.05.11</span></dd>
+                                    <dd><a href="#!">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</a><span>2022.05.11</span></dd>
+                                    <dd><a href="#!">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</a><span>2022.05.11</span></dd>
+                                    <dd><a href="#!">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</a><span>2022.05.11</span></dd>
+                                    <dd><a href="#!">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</a><span>2022.05.11</span></dd>
                                 </dl>
                             </li>
                             <li>02</li>
@@ -395,9 +403,9 @@
                     <li><a href="">그라프 하우스 소개</a></li>
                 </ul>
                 <div class="sns">
-                    <a href=""><i class="xi-kakaotalk"></i></a>
-                    <a href=""><i class="xi-facebook"></i></a>
-                    <a href=""><i class="xi-instagram"></i>
+                    <a href="#!"><i class="xi-kakaotalk"></i></a>
+                    <a href="#!"><i class="xi-facebook"></i></a>
+                    <a href="#!"><i class="xi-instagram"></i>
                     </a>
                 </div>
             </div>

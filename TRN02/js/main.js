@@ -101,6 +101,19 @@ $('.product_slider').slick({
     arrows: false,
     dots: true,
     autoplay: true,
+
+    //slick responsive 반응형--------------------------------//
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
 });
 
 $('.product_list .s_left').on('click', function(){
@@ -128,4 +141,11 @@ $('.tab_content>li').eq(idx).addClass('on').siblings().removeClass('on');
 $('.footer #link').on('change', function(){
     var lik = $(this).val();
 if (lik) window.open(lik)
+})
+
+////////////////반응형/////////////////////
+//// () => {} 는 function (){} 의 축약 but this는 먹히지 않음.///////
+$('.mbtn').on('click', function() {
+    $('nav').toggleClass('on');
+    $(this).toggleClass('is-active');
 })
