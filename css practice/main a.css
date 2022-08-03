@@ -241,7 +241,7 @@ hr {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     height: 100vh;
-    background-image: url(/St.background.jpg);
+    background-image: url(../St.background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -314,7 +314,7 @@ body {
     width: auto;
     margin: 0 auto;
     height: 100vh;
-    background-image: url(/St.background.jpg);
+    background-image: url(../St.background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
